@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+:root{
+    --color-primary: #191d2b;
+    --color-secondary: #27AE60;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-grey0: #f8f8f8;
+    --color-grey1: #dbe1e8;
+    --color-grey2: #b2becd;
+    --color-grey3: #6c7983;
+    --color-grey4: #454356;
+    --color-grey5: #2a2e35;
+    --color-grey6: #12181b;
+    --br-sm-2:14px;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+}
+body{
+    background-color: var(--color-primary);
+    font-family: "Lato", sans-serif;
+    font-size: 1.1rem;
+    color:var(--color-white);
+    transition: all .4s ease-in-out;
+    padding: 2.5rem 3rem;
+    height: 100%;
+    color: #777;
+    line-height: 1.8;  
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    min-height: 100%;
+  }
+  
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url('/static/images/image1.jpg');
+    min-height: 400px;
+  }
+  
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url('/static/images/image1.jpg');
+    min-height: 400px;
+  }
+  
+  .w3-wide {letter-spacing: 10px;}
+  .w3-hover-opacity {cursor: pointer;}
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: inherit;
+}
+
+.row{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    background-color: var(--color-primary);
+}
+.leftcolumn{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.leftcolumn .card .post-title{
+    color: var(--color-secondary);
+    text-transform: uppercase;
+}
+.leftcolumn .card .post-time{
+    color: var(--color-grey4);
+    font-size: .8rem;
+    font-weight: 50;
+}
+.login{
+  color: var(--color-primary) !important;
+  background-color: red !important;
+  display: flex;
+  padding-left: 15rem;
+  padding-right: 0;
+}
+

@@ -1,17 +1,30 @@
-<h1>My Blog</h1>
-
-
-
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelly.kiprotich</title>
+    <link rel="stylesheet" href="{% static 'posts.css' %}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
 <div class="row">
     <div class="leftcolumn">
       
         <div class="card">
        
-        <h2>{{posts.title}}</h2>
-        <h5>{{posts.created_at}}</h5>
-        <p>{{posts.body}}</p>
+        <h2 class="post-title">{{posts.title}}</h2>
+        <h5 class="posting-time">{{posts.created_at}}</h5>
+        <p class="post-body">{{posts.body}}</p>
        
         </div>
  
     </div>
 </div>
+</body>
+</html>
+
