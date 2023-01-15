@@ -39,7 +39,7 @@
         {% for post in posts reversed %}
         <div class="card">
        <a  href="/post/{{post.id}}">
-        <h2 class="post-title">{{post.title}}</h2>
+        <h3 class="post-author">{{posts.author}}</h3>
         <h5 class="post-time">{{post.created_at}}</h5>
         <p class="post-summary">{{post.body|truncatewords:30}}</p>
        </a>

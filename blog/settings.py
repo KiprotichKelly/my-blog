@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'posts',
+    "graphene_django",
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,8 @@ DEFAULT_AUTO_FIELD='django.db.models.AutoField'
 
 LOGIN_REDIRECT_URL = "index"
 LOGOUT_REDIRECT_URL = "index"
+
+
+GRAPHENE = {
+  "SCHEMA": "blog.schema.schema",
+}
