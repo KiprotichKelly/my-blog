@@ -132,6 +132,4 @@ LOGIN_REDIRECT_URL = "index"
 LOGOUT_REDIRECT_URL = "index"
 
 
-GRAPHENE = {
-  "SCHEMA": "blog.schema.schema",
-}
+
